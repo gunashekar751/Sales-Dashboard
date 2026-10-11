@@ -30,12 +30,26 @@ An interactive sales dashboard built in **Microsoft Excel** using PivotTables, P
 2. **Pivot Table**: the PivotTables that feed every KPI and chart.
 3. **Data**: the raw sales data (2,000 rows).
 
-### Dataset Columns
+### Dataset
 
-`Order ID`, `Date`, `Region`, `Sales Channel`, `Customer Type`, `Product Category`, `Product`, `Salesperson`, `Quantity`, `Unit Price`, `Discount`, `Revenue`
+The project uses a **sample sales dataset of 2,000 orders** (January to December 2026), stored in the `Data` sheet of the workbook. It was used to practice building PivotTables, dashboards and VBA automation.
 
-Revenue is calculated as `Quantity × Unit Price × (1 − Discount)`.
+| Column | Description |
+|---|---|
+| Order ID | Unique order number |
+| Date | Order date |
+| Region | Central, East, North, South, West |
+| Sales Channel | Corporate Sales, Marketplace, Online, Retail Store |
+| Customer Type | New or Returning |
+| Product Category | Computers, Monitors, Networking, Storage, Accessories, Office Supplies |
+| Product | Specific product sold |
+| Salesperson | Salesperson on the order |
+| Quantity | Units sold |
+| Unit Price | Price per unit |
+| Discount | Discount rate applied |
+| Revenue | Quantity × Unit Price × (1 − Discount) |
 
+**Data quality checks:** no blank cells and no duplicate Order IDs.
 ## Dashboard Features
 
 ### KPI Cards
